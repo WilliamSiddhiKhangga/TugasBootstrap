@@ -7,16 +7,16 @@ let carouselInner = document.getElementsByClassName('carousel-inner')[0];
 const enableLightmode = () => {
     document.body.classList.add('lightmode');
     localStorage.setItem('lightmode', 'active');
-    logo.src = '/image/light-mode-logo.png';
-    logo2.src = '/image/light-mode-logo.png';
+    logo.src = 'image/light-mode-logo.png';
+    logo2.src = 'image/light-mode-logo.png';
     carouselInner.style.opacity = '100%';
 }
 
 const disableLightmode = () => {
     document.body.classList.remove('lightmode');
     localStorage.setItem('lightmode', null);
-    logo.src = '/image/dark-mode-logo.png';
-    logo2.src = '/image/dark-mode-logo.png';
+    logo.src = 'image/dark-mode-logo.png';
+    logo2.src = 'image/dark-mode-logo.png';
     carouselInner.style.opacity = '90%';
 }
 
